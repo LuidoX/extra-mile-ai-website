@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Readiness Assessment - Extra Mile AI | Free Business AI Evaluation</title>
+    <meta name="description" content="Get your free AI readiness assessment. Discover how AI can transform your business with personalized recommendations and ROI projections.">
+    
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+    <!-- End Google Tag Manager -->
+    
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Header */
+        .header {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 12px;
+            padding: 1rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+        
+        .nav-tabs {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .nav-tab {
+            padding: 0.5rem 1rem;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+        
+        .nav-tab.active {
+            background: rgba(255,255,255,0.3);
+        }
+        
+        .nav-tab:hover {
+            background: rgba(255,255,255,0.3);
+        }
+        
+        /* Privacy Notice */
+        .privacy-notice {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .privacy-title {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 1rem;
+        }
+        
+        .privacy-content {
+            color: #64748b;
+            line-height: 1.6;
+        }
+        
+        .privacy-content p {
+            margin-bottom: 1rem;
+        }
+        
+        .privacy-link {
+            color: #8B5CF6;
+            text-decoration: none;
+        }
+        
+        .privacy-link:hover {
+            text-decoration: underline;
+        }
+        
+        /* Form Container */
+        .form-container {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        /* Progress Bar */
+        .progress-container {
+            margin-bottom: 2rem;
+        }
+        
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: #e2e8f0;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(135deg, #8B5CF6 0%, #14B8A6 100%);
+            width: 17%;
+            transition: width 0.3s ease;
+        }
+        
+        .progress-text {
+            text-align: center;
+            margin-top: 0.5rem;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+        
+        /* Form Sections */
+        .form-section {
+            margin-bottom: 2rem;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #1e293b;
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            color: #64748b;
+            margin-bottom: 2rem;
+        }
+        
+        /* Form Fields */
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-label {
+            display: block;
+            font-weight: 600;
+            color: #374151;
+            margin-bottom: 0.5rem;
+        }
+        
+        .required {
+            color: #ef4444;
+        }
+        
+        .form-input {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .form-input:focus {
+            outline: none;
+            border-color: #8B5CF6;
+            box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.1);
+        }
+        
+        /* Radio Groups */
+        .radio-group {
+            display: grid;
+            gap: 0.75rem;
+            margin-top: 0.5rem;
+        }
+        
+        .radio-option {
+            display: flex;
+            align-items: center;
+            padding: 0.75rem;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .radio-option:hover {
+            border-color: #8B5CF6;
+            background: #f8fafc;
+        }
+        
+        .radio-option input[type="radio"] {
+            margin-right: 0.75rem;
+            transform: scale(1.2);
+        }
+        
+        .radio-option.selected {
+            border-color: #8B5CF6;
+            background: #f3f4f6;
+        }
+        
+        /* Checkbox Groups */
+        .checkbox-group {
+            margin: 1.5rem 0;
+        }
+        
+        .checkbox-option {
+            display: flex;
+            align-items: flex-start;
+            padding: 1rem;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .checkbox-option:hover {
+            border-color: #8B5CF6;
+            background: #f8fafc;
+        }
+        
+        .checkbox-option input[type="checkbox"] {
+            margin-right: 0.75rem;
+            margin-top: 0.25rem;
+            transform: scale(1.2);
+        }
+        
+        .checkbox-content {
+            flex: 1;
+        }
+        
+        .checkbox-title {
+            font-weight: 600;
+            color: #374151;
+            margin-bottom: 0.25rem;
+        }
+        
+        .checkbox-description {
+            color: #6b7280;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+        
+        .required-checkbox {
+            border-color: #fbbf24;
+            background: #fffbeb;
+        }
+        
+        /* Legal Section */
+        .legal-section {
+            background: #f8fafc;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+        
+        .legal-title {
+            font-weight: 600;
+            color: #374151;
+            margin-bottom: 1rem;
+        }
+        
+        .legal-text {
+            color: #6b7280;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+        
+        /* Submit Button */
+        .submit-container {
+            text-align: center;
+            margin-top: 2rem;
+        }
+        
+        .submit-btn {
+            background: linear-gradient(135deg, #8B5CF6 0%, #14B8A6 100%);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            min-width: 200px;
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(139, 92, 246, 0.3);
+        }
+        
+        .submit-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .form-container {
+                padding: 1.5rem;
+            }
+            
+            .nav-tabs {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .radio-group {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        /* Loading State */
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .spinner {
+            border: 4px solid #f3f4f6;
+            border-top: 4px solid #8B5CF6;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 1rem;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="container">
+        <header class="header">
+            <a href="./index.html" class="logo">🚀 Extra Mile AI</a>
+            <div class="nav-tabs">
+                <a href="#" class="nav-tab active">Assessment</a>
+                <a href="#" class="nav-tab">Privacy Policy</a>
+                <a href="#" class="nav-tab">Your Data Rights</a>
+            </div>
+        </header>
+
+        <div class="privacy-notice">
+            <h2 class="privacy-title">
+                🔒 Your Privacy Matters
+            </h2>
+            <div class="privacy-content">
+                <p><strong>Data Collection:</strong> We collect the information you provide in this assessment to evaluate your AI readiness and provide personalised recommendations.</p>
+                <p><strong>How We Use It:</strong> Your data helps us create your AI readiness report and, with your consent, follow up with relevant information about our services.</p>
+                <p><strong>Your Rights:</strong> You can access, update, or delete your data at any time. <a href="#" class="privacy-link">Learn more about your rights</a></p>
+            </div>
+        </div>
+
+        <div class="form-container">
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+                <div class="progress-text">Step 1 of 6 - 17% Complete</div>
+            </div>
+
+            <form id="assessmentForm" action="/api/submit-assessment" method="POST">
+                <div class="form-section">
+                    <h1 class="section-title">Business & Decision-Maker Profile</h1>
+                    <p class="section-subtitle">Tell us about your business</p>
+
+                    <div class="form-group">
+                        <label for="companyName" class="form-label">Company name <span class="required">*</span></label>
+                        <input type="text" id="companyName" name="companyName" class="form-input" placeholder="Enter your company name" required>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                        <div class="form-group">
+                            <label for="contactName" class="form-label">Contact name <span class="required">*</span></label>
+                            <input type="text" id="contactName" name="contactName" class="form-input" placeholder="e.g. John Smith" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="rolePosition" class="form-label">Role/Position <span class="required">*</span></label>
+                            <input type="text" id="rolePosition" name="rolePosition" class="form-input" placeholder="e.g. Managing Director" required>
+                        </div>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email address <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" class="form-input" placeholder="your.email@company.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Phone number <span class="required">*</span></label>
+                            <input type="tel" id="phone" name="phone" class="form-input" placeholder="+44 123 456 7890" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Industry sector <span class="required">*</span></label>
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="industry" value="education" required>
+                                Education
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="industry" value="finance" required>
+                                Finance
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="industry" value="healthcare" required>
+                                Healthcare
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="industry" value="hospitality" required>
+                                Hospitality
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="industry" value="manufacturing" required>
+                                Manufacturing
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="industry" value="professional_services" required>
+                                Professional Services
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="industry" value="retail" required>
+                                Retail
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="industry" value="technology" required>
+                                Technology
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="industry" value="other" required>
+                                Other
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Number of employees <span class="required">*</span></label>
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="employees" value="1-10" required>
+                                1–10
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="employees" value="11-50" required>
+                                11–50
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="employees" value="51-200" required>
+                                51–200
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="employees" value="201-500" required>
+                                201–500
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="employees" value="500+" required>
+                                > 500
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Annual turnover <span class="required">*</span></label>
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="turnover" value="<250k" required>
+                                < £250,000
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="turnover" value="250k-1m" required>
+                                £250,000–£1,000,000
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="turnover" value="1m-5m" required>
+                                £1,000,000–£5,000,000
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="turnover" value="5m-20m" required>
+                                £5,000,000–£20,000,000
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="turnover" value="20m+" required>
+                                > £20,000,000
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">How "digital" is your business today? <span class="required">*</span></label>
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="digitalMaturity" value="paper" required>
+                                Paper & local folders only
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="digitalMaturity" value="spreadsheets" required>
+                                Spreadsheets on cloud sync
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="digitalMaturity" value="apps" required>
+                                Off-the-shelf apps, no integration
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="digitalMaturity" value="connected" required>
+                                Some connected systems
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="digitalMaturity" value="integrated" required>
+                                Fully integrated platforms
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="legal-section">
+                    <h3 class="legal-title">Legal Basis & Consent</h3>
+                    <p class="legal-text">We process your data based on legitimate interest for business purposes and your explicit consent for marketing communications.</p>
+                    
+                    <div class="checkbox-group">
+                        <label class="checkbox-option required-checkbox">
+                            <input type="checkbox" name="requiredConsent" required>
+                            <div class="checkbox-content">
+                                <div class="checkbox-title">Required:</div>
+                                <div class="checkbox-description">I consent to the processing of my personal data to generate my AI readiness assessment and report. This includes storing my responses and contact details for the purpose of providing the requested service. <em>(Required to proceed)</em></div>
+                            </div>
+                        </label>
+
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="marketingConsent">
+                            <div class="checkbox-content">
+                                <div class="checkbox-title">Optional:</div>
+                                <div class="checkbox-description">I consent to receiving marketing communications about AI services and solutions that may be relevant to my business. You can unsubscribe at any time. <em>(Optional)</em></div>
+                            </div>
+                        </label>
+                    </div>
+
+                    <p class="legal-text"><strong>Your Rights:</strong> You can withdraw consent, access your data, request corrections, or ask for deletion at any time. Contact us at <a href="mailto:privacy@extra-mile.ai" class="privacy-link">privacy@extra-mile.ai</a> or <a href="#" class="privacy-link">learn more about your rights</a>.</p>
+                </div>
+
+                <div class="submit-container">
+                    <button type="submit" class="submit-btn">Continue Assessment</button>
+                </div>
+            </form>
+
+            <div class="loading" id="loadingState">
+                <div class="spinner"></div>
+                <p>Processing your assessment...</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Form handling
+        document.getElementById('assessmentForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            // Show loading state
+            document.getElementById('loadingState').style.display = 'block';
+            this.style.display = 'none';
+            
+            // Collect form data
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData.entries());
+            
+            // Track form submission
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'form_submit', {
+                    'event_category': 'Assessment',
+                    'event_label': 'Step 1 Complete'
+                });
+            }
+            
+            if (typeof dataLayer !== 'undefined') {
+                dataLayer.push({
+                    'event': 'assessment_submit',
+                    'step': 1,
+                    'industry': data.industry,
+                    'employees': data.employees
+                });
+            }
+            
+            try {
+                // Submit to backend (replace with actual endpoint)
+                const response = await fetch('/api/submit-assessment', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data)
+                });
+                
+                if (response.ok) {
+                    // Redirect to results page or next step
+                    window.location.href = './results.html';
+                } else {
+                    throw new Error('Submission failed');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('There was an error submitting your assessment. Please try again.');
+                
+                // Hide loading state and show form again
+                document.getElementById('loadingState').style.display = 'none';
+                this.style.display = 'block';
+            }
+        });
+        
+        // Radio button selection styling
+        document.querySelectorAll('input[type="radio"]').forEach(radio => {
+            radio.addEventListener('change', function() {
+                // Remove selected class from all options in this group
+                const groupName = this.name;
+                document.querySelectorAll(`input[name="${groupName}"]`).forEach(r => {
+                    r.closest('.radio-option').classList.remove('selected');
+                });
+                
+                // Add selected class to current option
+                this.closest('.radio-option').classList.add('selected');
+            });
+        });
+        
+        // Form validation
+        function validateForm() {
+            const requiredFields = document.querySelectorAll('[required]');
+            let isValid = true;
+            
+            requiredFields.forEach(field => {
+                if (!field.value && field.type !== 'radio' && field.type !== 'checkbox') {
+                    isValid = false;
+                    field.style.borderColor = '#ef4444';
+                } else if (field.type === 'radio') {
+                    const radioGroup = document.querySelectorAll(`input[name="${field.name}"]`);
+                    const isChecked = Array.from(radioGroup).some(radio => radio.checked);
+                    if (!isChecked) {
+                        isValid = false;
+                    }
+                } else if (field.type === 'checkbox' && field.required && !field.checked) {
+                    isValid = false;
+                } else {
+                    field.style.borderColor = '#e5e7eb';
+                }
+            });
+            
+            document.querySelector('.submit-btn').disabled = !isValid;
+            return isValid;
+        }
+        
+        // Real-time validation
+        document.querySelectorAll('input').forEach(input => {
+            input.addEventListener('input', validateForm);
+            input.addEventListener('change', validateForm);
+        });
+        
+        // Initial validation
+        validateForm();
+    </script>
+</body>
+</html>
+
